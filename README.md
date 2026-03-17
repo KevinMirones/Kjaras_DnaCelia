@@ -1,4 +1,4 @@
-# 🍖 Kjaras Doña Celia — Landing Page
+# Kjaras Doña Celia — Landing Page
 
 Landing page profesional para negocio de comida boliviana.  
 **Stack:** HTML5 · CSS3 · JavaScript (ES Modules) · JSON estático  
@@ -6,7 +6,7 @@ Landing page profesional para negocio de comida boliviana.
 
 ---
 
-## 📁 Estructura del proyecto
+##  Estructura del proyecto
 
 ```
 kjaras-dona-celia/
@@ -81,7 +81,7 @@ https://TU_USUARIO.github.io/kjaras-dona-celia/
 
 ---
 
-## ✏️ Cómo personalizar
+## Cómo personalizar
 
 ### Cambiar productos o precios
 Edita `data/menu.json`:
@@ -148,7 +148,7 @@ Instala la extensión **"Live Server"** → clic derecho en `index.html` → "Op
 
 ---
 
-## 🛠️ Tecnologías
+## Tecnologías
 
 | Tecnología | Uso |
 |---|---|
