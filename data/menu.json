@@ -1,0 +1,68 @@
+{
+  "categorias": [
+    {
+      "id": "kjaras",
+      "nombre": "Kjaras",
+      "icono": "🥩",
+      "descripcion": " "
+    },
+    {
+      "id": "costillas",
+      "nombre": "Costillas",
+      "icono": "🍖",
+      "descripcion": "A la parrilla con marinado secreto de Doña Celia"
+    },
+    {
+      "id": "combos",
+      "nombre": "Combos",
+      "icono": "🍽️",
+      "descripcion": "Lo mejor de los dos mundos"
+    }
+  ],
+  "productos": [
+    {
+      "id": 1,
+      "nombre": "Kjaras Clásicas",
+      "categoria": "kjaras",
+      "precio": 35,
+      "descripcion": "Cuerillo de cerdo asado a la parrilla con chuletas tiernas, papa, mote y chorizo. La receta auténtica que no falla.",
+      "imagen": "assets/images/kjaras-clasicas.jpg",
+      "badge": "⭐ Estrella",
+      "disponible": true,
+      "destacado": true
+    },
+    {
+      "id": 2,
+      "nombre": "Costillas a la Parrilla",
+      "categoria": "costillas",
+      "precio": 90,
+      "descripcion": "Costillas de cerdo, asadas lentamente hasta lograr corteza dorada y jugosa por dentro. Con papa, mote, chorizo y cuerillo.",
+      "imagen": "assets/images/costillas.jpg",
+      "badge": "🔥 Popular",
+      "disponible": true,
+      "destacado": true
+    },
+    {
+      "id": 3,
+      "nombre": "Media Costilla",
+      "categoria": "costillas",
+      "precio": 50,
+      "descripcion": "Porción personal de costillas a la parrilla con guarnición de papa, mote, chorizo y cuerillo.",
+      "imagen": "assets/images/media-costilla.jpg",
+      "badge": "🍴 Personal",
+      "disponible": true,
+      "destacado": false
+    },
+    {
+      "id": 4,
+      "nombre": "Mixto",
+      "categoria": "combos",
+      "precio": 90,
+      "descripcion": "Lo mejor de los dos mundos: porción de Costillas + Kjaras, con papa, mote, chorizo, cuerillo y llajua picante. Ideal para compartir.",
+      "imagen": "assets/images/combo-especial.jpg",
+      "badge": "💥 Combo",
+      "disponible": true,
+      "destacado": true
+    } 
+  ]
+}

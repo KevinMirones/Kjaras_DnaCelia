@@ -1,0 +1,234 @@
+/* ═══════════════════════════════════════════════════════════════
+   base.css — Reset, tipografía y utilidades
+   ═══════════════════════════════════════════════════════════════ */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  font-family: var(--font-body);
+  background: var(--cream);
+  color: var(--text);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+  font-family: inherit;
+}
+
+ul, ol { list-style: none; }
+
+/* ── Tipografía ── */
+h1, h2, h3, h4 {
+  font-family: var(--font-display);
+  line-height: 1.1;
+  font-weight: 700;
+}
+
+/* ── Utilidades ── */
+.container {
+  max-width: var(--max-w);
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.section {
+  padding: var(--section-pad);
+}
+
+.section-label {
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: var(--fire);
+  margin-bottom: 14px;
+  display: block;
+}
+
+.section-title {
+  font-family: var(--font-display);
+  font-size: clamp(2.2rem, 5vw, 3.5rem);
+  font-weight: 700;
+  color: var(--coal);
+  line-height: 1.05;
+}
+
+.section-title em {
+  font-style: italic;
+  color: var(--fire);
+}
+
+.section-rule {
+  width: 52px;
+  height: 3px;
+  background: linear-gradient(90deg, var(--fire), var(--ember));
+  border-radius: 2px;
+  margin-top: 18px;
+}
+
+.section-header {
+  margin-bottom: 56px;
+  text-align: center;
+}
+
+.section-header .section-rule {
+  margin: 18px auto 0;
+}
+
+/* ── Scroll reveal ── */
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity var(--t-slow) var(--ease),
+              transform var(--t-slow) var(--ease);
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.reveal-delay-1 { transition-delay: 0.1s; }
+.reveal-delay-2 { transition-delay: 0.2s; }
+.reveal-delay-3 { transition-delay: 0.3s; }
+.reveal-delay-4 { transition-delay: 0.4s; }
+
+/* ── Botones base ── */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 0.95rem;
+  padding: 14px 30px;
+  border-radius: 60px;
+  transition: transform var(--t-fast) var(--ease),
+              box-shadow var(--t-fast) var(--ease);
+  cursor: pointer;
+  border: none;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+}
+
+.btn-wa {
+  background: linear-gradient(135deg, #25D366, #128C7E);
+  color: #fff;
+  box-shadow: 0 8px 28px rgba(37,211,102,0.32);
+}
+
+.btn-wa:hover {
+  box-shadow: 0 14px 40px rgba(37,211,102,0.42);
+  color: #fff;
+}
+
+.btn-maps {
+  background: #4285F4;
+  color: #fff;
+  box-shadow: 0 6px 22px rgba(66,133,244,0.28);
+}
+
+.btn-maps:hover {
+  box-shadow: 0 10px 32px rgba(66,133,244,0.38);
+  color: #fff;
+}
+
+.btn-fire {
+  background: linear-gradient(135deg, var(--fire), var(--ember));
+  color: #fff;
+  box-shadow: 0 6px 22px rgba(193,56,10,0.3);
+}
+
+.btn-fire:hover {
+  box-shadow: 0 10px 32px rgba(193,56,10,0.4);
+  color: #fff;
+}
+
+/* ── Loading state ── */
+#app-loading {
+  position: fixed;
+  inset: 0;
+  background: var(--coal);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
+#app-loading.hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.loader-logo {
+  font-family: var(--font-display);
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: var(--gold);
+  margin-bottom: 24px;
+  animation: pulse 1.5s infinite;
+}
+
+.loader-logo em { font-style: italic; color: #fff; }
+
+.loader-bar {
+  width: 160px;
+  height: 3px;
+  background: rgba(255,255,255,0.1);
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.loader-bar-fill {
+  height: 100%;
+  width: 0%;
+  background: linear-gradient(90deg, var(--fire), var(--gold));
+  border-radius: 2px;
+  animation: loadBar 1.2s ease forwards;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0.5; }
+}
+
+@keyframes loadBar {
+  to { width: 100%; }
+}
+
+/* ── Responsive helpers ── */
+@media (max-width: 768px) {
+  .hide-mobile { display: none !important; }
+}
+
+@media (min-width: 769px) {
+  .hide-desktop { display: none !important; }
+}

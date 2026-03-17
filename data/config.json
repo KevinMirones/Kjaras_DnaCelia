@@ -1,0 +1,62 @@
+{
+  "negocio": {
+    "nombre": "Kjaras Doña Celia",
+    "slogan": "Tradición boliviana a la parrilla",
+    "descripcion": "Las auténticas Kjaras y Costillas de Santa Cruz.",
+    "whatsapp": "59179481762",
+    "whatsapp_mensaje": "Hola Doña Celia, quiero hacer un pedido ",
+    "telefono": "+591 79481762",
+    "ciudad": "Santa Cruz, Bolivia",
+    "direccion": "7mo anillo, cambodromo",
+    "maps_link": "https://maps.app.goo.gl/dtyhLFQo6G5i9ZVK9",
+    "maps_embed_coords": "-17.7383149,-63.1399482",
+    "horario": {
+      "dias": "Viernes",
+      "apertura": "18:30",
+      "cierre": "23:00"
+    },
+    "redes": {
+      "whatsapp": "https://wa.me/59179481762",
+      "facebook": "",
+      "instagram": ""
+    }
+  },
+  "galeria": [
+    {
+      "id": 1,
+      "titulo": "Kjaras a la parrilla",
+      "imagen": "assets/images/galeria-1.jpg",
+      "alt": "Kjaras crujientes recién salidas de la brasa"
+    },
+    {
+      "id": 2,
+      "titulo": "Costillas jugosas",
+      "imagen": "assets/images/galeria-2.jpg",
+      "alt": "Costillas de cerdo a la brasa"
+    },
+    {
+      "id": 3,
+      "titulo": "Combo familiar",
+      "imagen": "assets/images/galeria-3.jpg",
+      "alt": "Combo especial Doña Celia"
+    },
+    {
+      "id": 4,
+      "titulo": "El local",
+      "imagen": "assets/images/galeria-4.jpg",
+      "alt": "Local de Kjaras Doña Celia"
+    },
+    {
+      "id": 5,
+      "titulo": "Preparación",
+      "imagen": "assets/images/galeria-5.jpg",
+      "alt": "Preparación artesanal"
+    },
+    {
+      "id": 6,
+      "titulo": "Detalle del plato",
+      "imagen": "assets/images/galeria-6.jpg",
+      "alt": "Detalle del plato completo"
+    }
+  ]
+}

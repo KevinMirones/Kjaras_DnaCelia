@@ -1,0 +1,40 @@
+/* ═══════════════════════════════════════════════════════════════
+   variables.css — Design tokens
+   ═══════════════════════════════════════════════════════════════ */
+
+:root {
+  /* Colors */
+  --fire:      #C1380A;
+  --ember:     #E8591A;
+  --gold:      #D4A853;
+  --coal:      #1A0A00;
+  --smoke:     #2E1500;
+  --charcoal:  #3D1A00;
+  --cream:     #FDF6EC;
+  --warm:      #F5E8D2;
+  --card:      #FFFFFF;
+  --text:      #3D1A00;
+  --muted:     #8A6040;
+  --border:    rgba(193,56,10,0.1);
+
+  /* Typography */
+  --font-display: 'Cormorant Garamond', serif;
+  --font-body:    'DM Sans', sans-serif;
+
+  /* Spacing */
+  --section-pad: clamp(60px, 10vw, 100px) 24px;
+  --max-w:       1140px;
+  --radius:      20px;
+  --radius-sm:   10px;
+
+  /* Shadows */
+  --shadow-sm:   0 2px 12px rgba(58,26,0,0.07);
+  --shadow-md:   0 6px 28px rgba(58,26,0,0.11);
+  --shadow-lg:   0 16px 50px rgba(58,26,0,0.17);
+
+  /* Transitions */
+  --ease:        cubic-bezier(0.4, 0, 0.2, 1);
+  --t-fast:      0.2s;
+  --t-mid:       0.35s;
+  --t-slow:      0.6s;
+}
